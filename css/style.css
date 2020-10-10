@@ -131,18 +131,29 @@ background:url("../img/back.jpg");
     margin: 0 auto;
     border-radius: 20vh;
 }
-#buton a
+a
 {
-   position: relative;
-   top: 1.3vh;
-   color: white;
-   transition: .5s;
+    background-color: black;
+    border-radius: 1vh;
+    color: white;
+    padding: 0.5vh;
+    transition: .5s;
 }
-#buton a:hover
+a:hover
 {
-    text-decoration: none;
     color: gray;
     transition: .5s;
+}
+.buton
+{
+    background-color: black;
+    opacity: 0.8;
+    transition: .5s;
+}
+.buton:hover
+{
+    transition: .5s;
+    background-color: #2A272A;
 }
 .isto2
 {
@@ -173,7 +184,7 @@ background:url("../img/back.jpg");
 }
 .footer
 {
-    background-color: #360D29;
+    background-color: black;
     color:white;
     height: 13vh;
     margin-top: 3vh;
