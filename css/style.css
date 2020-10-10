@@ -5,7 +5,7 @@
 }
 body
 {
-    background-color: #C5FCEF;
+    background-color: #2A272A;
 }
 .jumbotron
 {
@@ -18,12 +18,12 @@ h1
 .center
 {
     text-align: center;
-    color: black;
+    color: white;
     
 }
 ol li
 {
-    color: black !important;
+    color: white !important;
 }
 .jumbotron
 {
@@ -31,7 +31,7 @@ ol li
 }
 .articleText h1
 {
-    background-color:#007BA9 ;
+    background-color:black ;
     width: 54%;
     margin: 0 auto;
     border-radius: 4vh;
@@ -42,15 +42,15 @@ ol li
 {
     margin-top: 1vh;
     margin-left: 3.5vh;
-    background-color: white;
-    border: 5px solid black;
+    background-color: #4B4A54;
     box-shadow: black 2px 5px 2px;
     border-radius: 2vh;
+    padding: 1vh;
 }
 .jumbotron .center
 {
     text-align: center;
-    color: #007BA9;
+    color: white;
 }
 p:hover
 {
@@ -67,7 +67,7 @@ ol:hover
 .pd
 {
     padding-left: 3vh;
-    color:black;
+    color:white;
 }
 .d
 {
@@ -85,6 +85,10 @@ ol:hover
     margin-top: 10vh;
     border-radius: 2vh;
 }
+strong
+{
+    color: black;
+}
 iframe
 {
     position: absolute;
@@ -96,6 +100,7 @@ iframe
 ol
 {
     list-style-type: decimal !important;
+    padding-left: 4vh;
 }
 ol li
 {
@@ -109,7 +114,7 @@ ol li
 .back
 {
     
-background:url("../img/back.png");
+background:url("../img/back.jpg");
   position: relative;
   height: 100vh;
   background-position: center;
@@ -121,10 +126,33 @@ background:url("../img/back.png");
     position: relative;
     top: 37vh;
     animation:vitaj 4s infinite;
-    background-color: #360D29 !important;
+    background-color: black !important;
     width: 25%;
     margin: 0 auto;
     border-radius: 20vh;
+}
+#buton a
+{
+   position: relative;
+   top: 1.3vh;
+   color: white;
+   transition: .5s;
+}
+#buton a:hover
+{
+    text-decoration: none;
+    color: gray;
+    transition: .5s;
+}
+.isto2
+{
+    position: relative;
+    top: 50vh;
+    background-color: black !important;
+    width: 13%;
+    height: 6vh;
+    margin: 0 auto;
+    border-radius: 15vh;
 }
 .aplet
 {
