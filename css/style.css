@@ -1,6 +1,6 @@
 *
 {
-    padding: 0;
+    font-family: 'Righteous', cursive;
     margin: 0;
 }
 body
@@ -9,7 +9,7 @@ body
 }
 .jumbotron
 {
-    background-color: #360D29 !important;
+    background-color: black !important;
 }
 h1
 {
@@ -28,6 +28,23 @@ ol li
 .jumbotron
 {
     margin-top: 4vh !important;
+}
+.articleText h1
+{
+    background-color:#007BA9 ;
+    width: 54%;
+    margin: 0 auto;
+    border-radius: 4vh;
+    border: 5px solid black;
+    box-shadow: black 2px 5px 2px;
+}
+.articleText p,ol
+{
+    margin-top: 1vh;
+    margin-left: 3.5vh;
+    background-color: white;
+    border: 5px solid black;
+    box-shadow: black 2px 5px 2px;
 }
 .jumbotron .center
 {
@@ -57,10 +74,14 @@ ol:hover
 }
 .video
 {
-    border:#0052A1 10px solid;
+    background-color: black;
+    border:black 10px solid;
+    width: 100%;
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;
+    box-shadow: black 2px 5px 2px;
+    margin-top: 10vh;
 }
 iframe
 {
@@ -73,6 +94,15 @@ iframe
 ol
 {
     list-style-type: decimal !important;
+}
+ol li
+{
+    list-style-type: decimal !important;
+}
+.article
+{
+    
+    
 }
 .back
 {
@@ -90,6 +120,9 @@ background:url("../img/back.png");
     top: 37vh;
     animation:vitaj 4s infinite;
     background-color: #360D29 !important;
+    width: 25%;
+    margin: 0 auto;
+    border-radius: 20vh;
 }
 .aplet
 {
@@ -111,7 +144,7 @@ background:url("../img/back.png");
 .footer
 {
     background-color: #360D29;
-    color: #007BA9;
+    color:white;
     height: 13vh;
     margin-top: 3vh;
 
@@ -128,4 +161,12 @@ background:url("../img/back.png");
 .footer p:last-child
 {
     margin-bottom: 0;
+}
+#video2
+{
+    margin-left: 3vh;
+}
+.magTop
+{
+    margin-top: 3vh;
 }
