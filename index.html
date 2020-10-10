@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script>
+        // Vanilla version of FitVids
+// Still licencened under WTFPL
+//
+// Not as robust and fault tolerant as the jQuery version.
+// It's BYOCSS.
+// And also, I don't support this at all whatsoever.
+
+(function(window, document, undefined) {
+  "use strict";
+
+  // List of Video Vendors embeds you want to support
+  var players = ['iframe[src*="youtube.com"]', 'iframe[src*="vimeo.com"]'];
+
+  // Select videos
+  var fitVids = document.querySelectorAll(players.join(","));
+
+  // If there are videos on the page...
+  if (fitVids.length) {
+    // Loop through videos
+    for (var i = 0; i < fitVids.length; i++) {
+      // Get Video Information
+      var fitVid = fitVids[i];
+      var width = fitVid.getAttribute("width");
+      var height = fitVid.getAttribute("height");
+      var aspectRatio = height / width;
+      var parentDiv = fitVid.parentNode;
+
+      // Wrap it in a DIV
+      var div = document.createElement("div");
+      div.className = "fitVids-wrapper";
+      div.style.paddingBottom = aspectRatio * 100 + "%";
+      parentDiv.insertBefore(div, fitVid);
+      fitVid.remove();
+      div.appendChild(fitVid);
+
+      // Clear height/width from fitVid
+      fitVid.removeAttribute("height");
+      fitVid.removeAttribute("width");
+    }
+  }
+})(window, document);
+    </script>
+</head>
+<body>
+<div class="back">
+    <div class="isto jumbotron jumbotron-fluid bg-dark"style="margin-top: 0vh !important;">
+        <h1 class="display-4 center">Zvuk inak</h1>
+        <p class="lead center">alebo to čo ste o ňom ešte nevedeli</p>
+    </div>
+</div>
+<div class="article">
+    <div class="jumbotron jumbotron-fluid bg-dark" style="margin-top: 0vh !important;">
+        <h1 class="display-4 center">Zvukový "LASER"</h1>
+        <p class="lead center">alebo ako môžete mať vyhody repráka a sluchadiel v jednom</p>
+    </div>
+   <div class="row d">
+    <div class="col-sm-6 articleText text-dark">
+        <h1 class="center">Ako je to možné?</h1>
+        <p class="pd">Zvuk ako aj svetlo patrí medzi vlnenie. Avšak pri zvuku je toto vlnenie
+             iného pôvodu. Aby sme dosiahly efekt <strong>LASERU</strong> tak musíme zvýšiť 
+             frekvenciu zvuku až na <strong>hodnoty nad 20kHz.</strong> No a náš laser funguje
+             aj kvôli efektu s ktorým sa stretávame v kvantovej mechanike.Vysoka frekvencia
+            zvuku z neho spraví akoby prúd častíc (vlnonovo časticový dualizmus - kvantum "
+            zvuku" je kvazičastica <strong>fonón</strong>)Čo už zaraďujeme do ultrazvuku ale
+            ako je potom možné počuť takýto zvuk? Je tu jeden trik a ten súvisi zo zaujímavou                 vlastnosťou zvuku. Túto vlastnosť nejdem nejako moc opisovať pretože je trošku 
+             komplikovanejšia. Zhrniem to: keď zvuk dosiahne určitú vysokú frekvenciu začne 
+             sa správať ako <strong> FM modulátor.</strong> No a čo stým ? Predovšetkým to, 
+             že ten ultra zvuk bude počuteľný až keď sa odrazí od nejakého objektu. A vzniká
+             tu taká vtipná situácia pretože vďaka tomu ten zvuk nebudete počuť, že ide z 
+             repráku ale že ide od steny.  </p>
+        <h1 class="center">A čo stým?</h1>
+        <ol>
+            <li>Môžte si takto pustiť hudbu cez reprák avšak budeme ju počuť iba my</li>
+            <li>Môžete si tento reprak buť <a href="https://www.soundlazer.com/shop/" target="_blanked">kúpiť sem</a> alebo si ho vyrobiť postup je skrytý v popisku videa</li>
+            <li>Je to celkom prakticke ak hovorite k publiku avšak nechcete nikoho rušiť mimo sály</li>
+        </ol>
+    </div>
+    <div class="col-sm-6">
+       <div class="video">
+        <iframe  src="https://www.youtube.com/embed/aBdVfUnS-pM" frameborder="0">video o zvuku</iframe>
+       </div>
+    </div>
+   </div>
+<div class="article">
+    <div class="jumbotron jumbotron-fluid bg-dark">
+        <h1 class="display-4 center">Kvantum/"častica" Zvuku</h1>
+        <p class="lead center">alebo ako je zvuk vlastne kvantový ako svetlo</p>
+    </div>
+   <div class="row d">
+    <div class="col-sm-6 articleText text-dark">
+        <h1 class="center">Ako môže mať zvuk časticu?</h1>
+        <p class="pd">V predchádzajúcom článku som spomínal, že zvuk je vlnenie a áno 
+            má avšak ďalšiu podobnú vlastnosť ako svetlo. A to <strong>vlnovo-časticový dualizmus.</strong> 
+            Poviete si čoto? No vlnovo-časticový dualizmus hovorí o tom, že svetlo sa
+             správa raz ako častica a raz ako vlnenie. No a čo má stým spoločný zvuk?
+              Zvuk má tiež svoje určité kvantum.
+               <strong>Kvazičastica zvuku je fonón.</strong>Preto kvazi(akože častica) 
+               lebo není reálna ako fotón ale skorej súvisi zo samotným zložením 
+               zvuk(alebo prostriedia všeobecne). Jednotlive fonóny sa môžu sčítavať 
+               alebo odčítavať pričom vznikne fonón silnejši, slabší alebo zanikne. 
+               Fonóny prvýkrat opísal ruskí fyzik <strong> Igor Tamm.</strong></p>
+        <h1 class="center">A čo stým?</h1>
+        <ol>
+            <li>fonóny sú dôležité pri opisovaní supravodičou</li>
+            <li>dobrá manipulácia s fonónmi sa podarila až v roku 2019</li>
+            <li>uľahčuje určité výpočty týkajuce sa prenosu tepla a pod.</li>
+        </ol>
+    </div>
+    <div class="col-sm-6">
+       <div class="video">
+        <iframe  src="https://www.youtube.com/embed/gxfAV7W2ZFw" frameborder="0">video o zvuku</iframe>
+       </div>
+    </div>
+   </div>
+   <div class="article">
+    <div class="jumbotron jumbotron-fluid bg-dark">
+        <h1 class="display-4 center">Akustické čierne diery</h1>
+        <p class="lead center">alebo ako simulovať čierny diery pomocou zvuku</p>
+    </div>
+   <div class="row d">
+    <div class="col-sm-6 articleText text-dark">
+        <h1 class="center">Zvuk a čierne diery a to prečo ?</h1>
+        <p class="pd">Je tu jeden zaujímavý sôsob ako môžeme simulovať čierne diery a
+             tak ich vlastne skúmať aj reálne. Prvý kto prišiel s touto myšlienkou
+              bol kanadský fyzik<strong> W. G. Unruh.</strong> A vtip pri tejto 
+              simulácii je ten, že matematika, ktorá opisuje tento systém sa dá 
+              považovať za zhodnú s matematikou, ktorá opisuje skutočne čierne 
+              dieri. No dobre ale ako to funguje? Princíp je jednoduchý predstavte si, že
+             vzduch by sa pohyboval rýchlosťou rýchlejšou ako rýchlosť zvuku a vy by ste boli v závetri. Ako aj neviem silno by ste kričali zvuk by sa nedostal ďalej pretože samotný vzduch sa pohybuje rýchlešie ako zvuk. A tu nám vznikne <strong>horizont udalosti.</strong> To je miesto z kadiaľ pri klasickej čiernej diery neunikne ani svetlo a podobne tu zasa neunikne vlnenie(čiže napr. zvuk)</p>
+        <h1 class="center">A čo stým?</h1>
+        <ol>
+            <li>No keďže ním fokusujeme zvuk tak si môžme takto pustiť hudbu cez reprák avšak budeme ju počuť iba my</li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+    <div class="col-sm-6">
+       <div class="video">
+        <iframe  src="https://www.youtube.com/embed/kOnoYQchHFw" frameborder="0">video o zvuku</iframe>
+       </div>
+    </div>
+   </div>
+</div>
+</div>
+<div class="footer">
+    <p>Matej Hušla</p>
+    <p>dfsa</p>
+    <p>das</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+body
+{
+    background-color: antiquewhite;
+}
+.jumbotron
+{
+    background-color: black !important;
+}
+h1
+{
+    font-family: 'Righteous', cursive;
+}
+.center
+{
+    text-align: center;
+    color: black;
+    
+}
+ol li
+{
+    color: black !important;
+}
+.jumbotron
+{
+    margin-top: 4vh !important;
+}
+.jumbotron .center
+{
+    text-align: center;
+    color: antiquewhite;
+}
+p:hover
+{
+    animation: hover 0.8s infinite;
+}
+h1:hover
+{
+    animation: hover 0.8s infinite;
+}
+ol:hover
+{
+    animation: hover 0.8s infinite;
+}
+.pd
+{
+    padding-left: 3vh;
+    color: black;
+}
+.d
+{
+    margin-right: 0 !important;
+}
+.video
+{
+    border:#2F4858 10px solid;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+iframe
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.back
+{
+    
+background:url("../img/back.png");
+  position: relative;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.isto
+{
+    position: relative;
+    top: 37vh;
+    animation:vitaj 2s infinite;
+    background-color: black !important;
+}
+.aplet
+{
+    height: 500px;
+    width: 400px;
+}
+@keyframes vitaj
+{
+    0%{opacity: 0.6;}
+    50%{opacity: 0.8;}
+    100%{opacity: 0.6;}
+}
+@keyframes hover
+{
+    0%{opacity: 1;}
+    50%{opacity: 0.6;}
+    100%{opacity: 1;}
+}
+.footer
+{
+    background-color: black;
+    color: white;
+    margin-bottom: 0 !important;
+}
