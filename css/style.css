@@ -36,7 +36,7 @@ ol li
     margin: 0 auto;
     border-radius: 4vh;
     border: 5px solid black;
-    box-shadow: black 2px 5px 2px;
+    box-shadow: black 2px 6px 2px;
 }
 .articleText p,ol
 {
@@ -45,6 +45,7 @@ ol li
     background-color: white;
     border: 5px solid black;
     box-shadow: black 2px 5px 2px;
+    border-radius: 2vh;
 }
 .jumbotron .center
 {
@@ -82,6 +83,7 @@ ol:hover
     height: 0;
     box-shadow: black 2px 5px 2px;
     margin-top: 10vh;
+    border-radius: 2vh;
 }
 iframe
 {
