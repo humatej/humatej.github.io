@@ -11,6 +11,7 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         // Vanilla version of FitVids
 // Still licencened under WTFPL
@@ -53,6 +54,30 @@
     }
   }
 })(window, document);
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
     </script>
 </head>
 <body>
@@ -61,8 +86,11 @@
         <h1 class="display-4 center" style="color: white;">Zvuk inak</h1>
         <p class="lead center" style="color: white;">alebo to čo ste o ňom ešte nevedeli</p>
     </div>
+    <div class="isto2 center" id="buton">
+        <a href="#viac">Dozvedieť sa viac</a>
+    </div>
 </div>
-<div class="article">
+<div class="article" id="viac">
     <div class="jumbotron jumbotron-fluid bg-dark" style="margin-top: 0vh !important;">
         <h1 class="display-4 center">Zvukový "LASER"</h1>
         <p class="lead center">alebo ako môžete mať vyhody repráka a sluchadiel v jednom</p>
@@ -116,7 +144,7 @@
         <h1 class="center">A čo stým?</h1>
         <ol>
             <li>fonóny sú dôležité pri opisovaní supravodičou</li>
-            <li></li>
+            <li>pomocu fonónov je možne zostrojiť <strong>počítač</strong> čiže je tu využitie fononickej výpočtovej techniky</li>
             <li>uľahčuje určité výpočty týkajuce sa prenosu tepla a pod.</li>
         </ol>
     </div>
@@ -148,6 +176,7 @@
         <h1 class="center">A čo stým?</h1>
         <ol>
             <li>Ako som už spomínal skúmajú sa pomocou nej skutočné čierne diery, čo je celkom praktické</li>
+            <li>je viacej druhou týchto sonických čierných dier nie len to čo sa tu reprezentuje na tomto videu</li>
         </ol>
     </div>
     <div class="col-sm-6">
@@ -171,11 +200,13 @@
              sa najčastejšie demonštruje ako kovový pásik, ktorý je konci
             zúžený do špecifického tvaru. Tento tvar dovoľuje aby tento upravený
             pásik absorboval takmer všetko kmitanie, ktoré by vytváralo hluk.
-            Najlepšie vidno túto demoštráciu na tomto videu v pravo.
+            Najlepšie vidno túto demoštráciu na tomto videu v pravo. Výhoda je 
+            že vlastne konštrukcia nie je zložitá na výrobu
         </p>
         <h1 class="center">A čo stým?</h1>
         <ol>
             <li>No patrične to zabraňuje rôznym zariadeniam aby vytvárali hluk napr. práčka a pod.</li>
+            <li>Povedal by som, že je lepšie eliminovať hluk priamo ako nepriamo cez rôzne fólie a pod.</li>
         </ol>
     </div>
    </div>
