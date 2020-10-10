@@ -131,7 +131,7 @@ background:url("../img/back.jpg");
     margin: 0 auto;
     border-radius: 20vh;
 }
-a
+.a
 {
     background-color: black;
     border-radius: 1vh;
@@ -144,6 +144,32 @@ a:hover
     color: gray;
     transition: .5s;
 }
+#buton button
+{
+    background-color: transparent;
+    border: none;
+    transition: .5s;
+}
+#buton button:hover
+{
+    background-color: transparent;
+    border: none;
+    color: gray;
+    transition: .5s;
+}
+#buton a
+{
+   position: relative;
+   top: 1.3vh;
+   color: white;
+   transition: .5s;
+}
+#buton a:hover
+{
+    text-decoration: none;
+    color: gray;
+    transition: .5s;
+}
 .buton
 {
     background-color: black;
@@ -153,13 +179,12 @@ a:hover
 .buton:hover
 {
     transition: .5s;
-    background-color: #2A272A;
+    background-color: gray;
 }
 .isto2
 {
     position: relative;
     top: 50vh;
-    background-color: black !important;
     width: 13%;
     height: 6vh;
     margin: 0 auto;
